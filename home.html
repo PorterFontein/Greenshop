@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230430191433">
+	<link rel="shortcut icon" href="">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<a data-da=".menu__body,520" href="#" class="header__logo"><img src="img/header/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Plant Care</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Blogs</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__action action-header">
+					<div class="action-header__search-body">
+						<form action="#" class="action-header__search">
+							<button type="submit" class="action-header__search-button _icon-search"></button>
+							<input autocomplete="off" type="search" placeholder="Find your plants" class="action-header__input _icon-search">
+						</form>
+					</div>
+					<a data-da=".menu__body,560,1" href="#" class="action-header__cart _icon-cart-header"><span>6</span></a>
+					<button data-da=".menu__body,690" data-popup="#popup" type="button" class="action-header__button button _icon-logout">Login</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-page">
+				<div class="main-page__container">
+					<div class="main-page__content content-main-page">
+						<div class="content-main-page__subtitle">Welcome to GreenShop</div>
+						<h1 class="content-main-page__title">Let’s Make a
+							Better <span>Planet</span></h1>
+						<div class="content-main-page__text">
+							<p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
+								create an unique Urban Jungle. Order your favorite plants!</p>
+						</div>
+						<a href="#" class="content-main-page__button button">SHOP NOW</a>
+					</div>
+					<div class="main-page__slider swiper">
+						<div class="main-page__wrapper swiper-wrapper">
+							<div class="main-page__slide swiper-slide">
+								<picture><source srcset="img/main-page/image-slide.webp" type="image/webp"><img src="img/main-page/image-slide.png" alt="Image"></picture>
+							</div>
+							<div class="main-page__slide swiper-slide">
+								<picture><source srcset="img/main-page/image-slide-2.webp" type="image/webp"><img src="img/main-page/image-slide-2.png" alt="Image"></picture>
+							</div>
+							<div class="main-page__slide swiper-slide">
+								<picture><source srcset="img/main-page/image-slide-3.webp" type="image/webp"><img src="img/main-page/image-slide-3.png" alt="Image"></picture>
+							</div>
+						</div>
+						<div class="main-page__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products products">
+				<div class="products__container">
+					<aside class="products__side">
+						<nav class="products__menu menu-page">
+							<div class="menu-page__categories categories">
+								<h3 class="categories__title title-menu">Categories</h3>
+								<ul class="categories__list">
+									<li class="categories__item"><a href="#" class="categories__link _active">House
+											Plants<span>(33)</span></a></li>
+									<li class="categories__item"><a href="#" class="categories__link">Potter
+											Plants<span>(12)</span></a></li>
+									<li class="categories__item"><a href="#" class="categories__link">Seeds<span>(65)</span></a>
+									</li>
+									<li class="categories__item"><a href="#" class="categories__link">Small
+											Plants<span>(39)</span></a></li>
+									<li class="categories__item"><a href="#" class="categories__link">Big
+											Plants<span>(23)</span></a>
+									</li>
+									<li class="categories__item"><a href="#" class="categories__link">Succulents<span>(17)</span></a>
+									</li>
+									<li class="categories__item"><a href="#" class="categories__link">Trerrariums<span>(19)</span></a></li>
+									<li class="categories__item"><a href="#" class="categories__link">Gardening<span>(13)</span></a>
+									</li>
+									<li class="categories__item"><a href="#" class="categories__link">Accessories<span>(18)</span></a></li>
+								</ul>
+							</div>
+							<form action="#" class="menu-page__filter filter">
+								<h3 class="filter__title title-menu">Price Range</h3>
+								<div class="filter__body body-filter">
+									<div id="m-slider" class="body-filter__slider"></div>
+									<div class="body-filter__price">
+										<div class="body-filter__label">Price:</div>
+										<div id="slider-value" class="body-filter__value"></div>
+									</div>
+								</div>
+								<button type="submit" class="filter__button button">Filter</button>
+							</form>
+							<div class="menu-page__size size">
+								<h3 class="size__title title-menu">Size</h3>
+								<ul class="size__list">
+									<li class="size__item"><a href="#" class="size__link">Small<span>(119)</span></a>
+									</li>
+									<li class="size__item"><a href="#" class="size__link">Medium<span>(86)</span></a></li>
+									<li class="size__item"><a href="#" class="size__link">Large<span>(78)</span></a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<div class="menu-page__image">
+							<picture><source srcset="img/categories/sale.webp" type="image/webp"><img src="img/categories/sale.jpg" alt="Image"></picture>
+						</div>
+					</aside>
+					<div class="products__short short">
+						<div data-tabs class="short__tabs tabs-short">
+							<div class="tabs-short__header">
+								<nav data-tabs-titles class="tabs-short__navigation">
+									<button type="button" class="tabs-short__title _tab-active">All Plants</button>
+									<button type="button" class="tabs-short__title">New Arrivals</button>
+									<button type="button" class="tabs-short__title">Sale</button>
+								</nav>
+								<div class="tabs-short__select-body">
+									<div class="tabs-short__select-title">Short by:</div>
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Default sorting</option>
+										<option value="2">Default sorting</option>
+										<option value="3">Default sorting</option>
+									</select>
+								</div>
+							</div>
+							<div data-tabs-body class="tabs-short__content">
+								<div class="tabs-short__body">
+									<div class="tabs-short__box">
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-1.webp" type="image/webp"><img src="img/products/image-1.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Barberton Daisy</a>
+											<div class="tabs-short__price">$119.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-2.webp" type="image/webp"><img src="img/products/image-2.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Angel Wing Begonia</a>
+											<div class="tabs-short__price">$169.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-3.webp" type="image/webp"><img src="img/products/image-3.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">African Violet</a>
+											<div class="tabs-short__price">$199.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-4.webp" type="image/webp"><img src="img/products/image-4.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Beach Spider Lily</a>
+											<div class="tabs-short__price">$129.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-5.webp" type="image/webp"><img src="img/products/image-5.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Blushing Bromeliad</a>
+											<div class="tabs-short__price">$139.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-6.webp" type="image/webp"><img src="img/products/image-6.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Aluminum Plant</a>
+											<div class="tabs-short__price">$179.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-7.webp" type="image/webp"><img src="img/products/image-7.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Bird's Nest Fern</a>
+											<div class="tabs-short__price">$99.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-8.webp" type="image/webp"><img src="img/products/image-8.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Broadleaf Lady Palm</a>
+											<div class="tabs-short__price">$59.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-9.webp" type="image/webp"><img src="img/products/image-9.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Chinese Evergreen</a>
+											<div class="tabs-short__price">$39.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-short__body">
+									<div class="tabs-short__box">
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-4.webp" type="image/webp"><img src="img/products/image-4.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Beach Spider Lily</a>
+											<div class="tabs-short__price">$129.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-5.webp" type="image/webp"><img src="img/products/image-5.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Blushing Bromeliad</a>
+											<div class="tabs-short__price">$139.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-6.webp" type="image/webp"><img src="img/products/image-6.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Aluminum Plant</a>
+											<div class="tabs-short__price">$179.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-7.webp" type="image/webp"><img src="img/products/image-7.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Bird's Nest Fern</a>
+											<div class="tabs-short__price">$99.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-8.webp" type="image/webp"><img src="img/products/image-8.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Broadleaf Lady Palm</a>
+											<div class="tabs-short__price">$59.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-9.webp" type="image/webp"><img src="img/products/image-9.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Chinese Evergreen</a>
+											<div class="tabs-short__price">$39.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-short__body">
+									<div class="tabs-short__box">
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-2.webp" type="image/webp"><img src="img/products/image-2.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Angel Wing Begonia</a>
+											<div class="tabs-short__price">$169.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-3.webp" type="image/webp"><img src="img/products/image-3.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">African Violet</a>
+											<div class="tabs-short__price">$199.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-4.webp" type="image/webp"><img src="img/products/image-4.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Beach Spider Lily</a>
+											<div class="tabs-short__price">$129.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-5.webp" type="image/webp"><img src="img/products/image-5.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Blushing Bromeliad</a>
+											<div class="tabs-short__price">$139.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-6.webp" type="image/webp"><img src="img/products/image-6.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Aluminum Plant</a>
+											<div class="tabs-short__price">$179.00</div>
+										</div>
+										<div class="tabs-short__item">
+											<div class="tabs-short__picture">
+												<a href="#" class="tabs-short__image-link">
+													<picture><source srcset="img/products/image-7.webp" type="image/webp"><img src="img/products/image-7.png" alt="Image"></picture>
+												</a>
+												<div class="tabs-short__icon">
+													<a href="#" class="tabs-short__item-icon _icon-cart-header"></a>
+													<a href="#" class="tabs-short__item-icon _icon-heart"></a>
+													<a href="#" class="tabs-short__item-icon _icon-search"></a>
+												</div>
+											</div>
+											<a href="#" class="tabs-short__label-link">Bird's Nest Fern</a>
+											<div class="tabs-short__price">$99.00</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="pagination">
+				<div class="pagination__container">
+					<a class="pagination__item-link _active" href="#">1</a>
+					<a class="pagination__item-link" href="#">2</a>
+					<a class="pagination__item-link" href="#">3</a>
+					<a class="pagination__item-link" href="#">4</a>
+					<a class="pagination__item-link _icon-arrow-right" href="#"></a>
+				</div>
+			</div>
+			<section class="page__info info">
+				<div class="info__container">
+					<div class="info__inner">
+						<div class="info__item">
+							<div class="info__image">
+								<picture><source srcset="img/info/image-1.webp" type="image/webp"><img src="img/info/image-1.png" alt="Image"></picture>
+							</div>
+							<div class="info__item-content">
+								<h3 class="info__title">Summer cactus & succulents</h3>
+								<div class="info__text">
+									<p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+								</div>
+								<button type="button" class="info__button button _icon-arrow-right-b">Find More</button>
+							</div>
+						</div>
+						<div class="info__item">
+							<div class="info__image">
+								<picture><source srcset="img/info/image-2.webp" type="image/webp"><img src="img/info/image-2.png" alt="Image"></picture>
+							</div>
+							<div class="info__item-content">
+								<h3 class="info__title">Styling Trends & much more</h3>
+								<div class="info__text">
+									<p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+								</div>
+								<button type="button" class="info__button button _icon-arrow-right-b">Find More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__blog blog">
+				<div class="blog__container">
+					<div class="blog__inner">
+						<h2 class="blog__title">Our Blog Posts</h2>
+						<p class="blog__text">We are an online plant shop offering a wide range of cheap and trendy plants.
+						</p>
+						<div class="blog__body body-blog">
+							<article class="body-blog__item">
+								<div class="body-blog__image">
+									<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-blog__box">
+									<div class="body-blog__time">
+										<div class="body-blog__date">September 12</div>
+										<div class="body-blog__read">I Read in 6 minutes</div>
+									</div>
+									<a class="body-blog__title-link" href="#">
+										<h4 class="body-blog__title">Cactus & Succulent
+											Care Tips</h4>
+									</a>
+									<p class="body-blog__text">Cacti are succulents are easy care plants for any home or patio.
+									</p>
+									<a class="body-blog__link _icon-arrow-right-n" href="#">Read More</a>
+								</div>
+							</article>
+							<article class="body-blog__item">
+								<div class="body-blog__image">
+									<picture><source srcset="img/blog/02.webp" type="image/webp"><img src="img/blog/02.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-blog__box">
+									<div class="body-blog__time">
+										<div class="body-blog__date">September 13</div>
+										<div class="body-blog__read">I Read in 2 minutes</div>
+									</div>
+									<a class="body-blog__title-link" href="#">
+										<h4 class="body-blog__title">Top 10 Succulents for
+											Your Home</h4>
+									</a>
+									<p class="body-blog__text">Best in hanging baskets. Prefers medium to high light.</p>
+									<a class="body-blog__link _icon-arrow-right-n" href="#">Read More</a>
+								</div>
+							</article>
+							<article class="body-blog__item">
+								<div class="body-blog__image">
+									<picture><source srcset="img/blog/03.webp" type="image/webp"><img src="img/blog/03.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-blog__box">
+									<div class="body-blog__time">
+										<div class="body-blog__date">September 15</div>
+										<div class="body-blog__read">I Read in 3 minutes</div>
+									</div>
+									<a class="body-blog__title-link" href="#">
+										<h4 class="body-blog__title">Cacti & Succulent
+											Care Tips</h4>
+									</a>
+									<p class="body-blog__text">Cacti and succulents thrive in containers and because most are.
+									</p>
+									<a class="body-blog__link _icon-arrow-right-n" href="#">Read More</a>
+								</div>
+							</article>
+							<article class="body-blog__item">
+								<div class="body-blog__image">
+									<picture><source srcset="img/blog/04.webp" type="image/webp"><img src="img/blog/04.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-blog__box">
+									<div class="body-blog__time">
+										<div class="body-blog__date">September 15</div>
+										<div class="body-blog__read">I Read in 2 minutes</div>
+									</div>
+									<a class="body-blog__title-link" href="#">
+										<h4 class="body-blog__title">Best Houseplants
+											Room by Room</h4>
+									</a>
+									<p class="body-blog__text">The benefits of houseplants are endless. In addition to.</p>
+									<a class="body-blog__link _icon-arrow-right-n" href="#">Read More</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="footer__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__inner">
+						<div class="subscribe__items">
+							<div class="subscribe__item">
+								<img class="subscribe__image" src="img/subscribe/01.svg" alt="Image">
+								<h4 class="subscribe__title">Garden Care</h4>
+								<p class="subscribe__text">We are an online plant shop offering a wide range of cheap and trendy
+									plants.</p>
+							</div>
+							<div class="subscribe__item">
+								<img class="subscribe__image" src="img/subscribe/02.svg" alt="Image">
+								<h4 class="subscribe__title">Plant Renovation</h4>
+								<p class="subscribe__text">We are an online plant shop offering a wide range of cheap and trendy
+									plants.</p>
+							</div>
+							<div class="subscribe__item">
+								<img class="subscribe__image" src="img/subscribe/03.svg" alt="Image">
+								<h4 class="subscribe__title">Watering Graden</h4>
+								<p class="subscribe__text">We are an online plant shop offering a wide range of cheap and trendy
+									plants.</p>
+							</div>
+						</div>
+						<form class="subscribe__form form-subscribe" action="#">
+							<h4 class="form-subscribe__title">Would you like to join newsletters?</h4>
+							<div class="form-subscribe__action">
+								<input type="email" placeholder="enter your email address..." class="form-subscribe__input">
+								<button type="submit" class="form-subscribe__button">Join</button>
+							</div>
+							<div class="form-subscribe__text">
+								<p>We usually post offers and challenges in newsletter. We’re your online houseplant
+									destination. We offer a wide range of houseplants and accessories shipped directly from our
+									(green)house to yours!</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="footer__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__inner">
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<a class="contacts__link-item" href="#"><img src="img/header/logo.svg" alt="Logo"></a>
+							</li>
+							<li class="contacts__item contacts__item_1">
+								<a class="contacts__link-item" href="#"></a>70 West Buckingham Ave.
+								Farmingdale, NY 11735
+							</li>
+							<li class="contacts__item contacts__item_2">
+								<a class="contacts__link-item" href="mailto:contact@greenshop.com">contact@greenshop.com</a>
+							</li>
+							<li class="contacts__item contacts__item_3">
+								<a class="contacts__link-item" href="tel:8801911717490">+88 01911 717
+									490</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<section class="footer__bottom bottom">
+				<div class="bottom__container">
+					<div data-spollers="554" class="bottom__inner">
+						<nav class="bottom__item">
+							<button type="button" data-spoller class="bottom__title bottom__title_spoller _icon-arrow-down">My
+								Account</button>
+							<ul class="bottom__list">
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">My Account</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Our stores</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Contact us</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Career</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Specials</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="bottom__item">
+							<button type="button" data-spoller class="bottom__title bottom__title_spoller _icon-arrow-down">Help &
+								Guide</button>
+							<ul class="bottom__list">
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Help Center</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">How to Buy</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Shipping & Delivery</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Product Policy</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">How to Return</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="bottom__item">
+							<button type="button" data-spoller class="bottom__title bottom__title_spoller _icon-arrow-down">Categories</button>
+							<ul class="bottom__list">
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">House Plants</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Potter Plants</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Seeds</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Small Plants</a>
+								</li>
+								<li class="bottom__list-item">
+									<a class="bottom__link" href="#">Accessories</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="bottom__item">
+							<h3 class="bottom__title">Social Media</h3>
+							<div class="bottom__social-box">
+								<a class="bottom__social-link _icon-facebook" href="#"></a>
+								<a class="bottom__social-link _icon-Instagram" href="#"></a>
+								<a class="bottom__social-link _icon-twitter" href="#"></a>
+								<a class="bottom__social-link _icon-linkedin" href="#"></a>
+								<a class="bottom__social-link _icon-union" href="#"></a>
+							</div>
+							<h3 class="bottom__title">We accept</h3>
+							<picture><source srcset="img/footer/01.webp" type="image/webp"><img class="bottom__image" src="img/footer/01.jpg" alt="Image"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/header/close.svg" alt="Close">
+				</button>
+				<div class="popup__text">
+					<div data-tabs data-tabs-animate class="tabs-header">
+						<nav data-tabs-titles class="tabs-header__navigation">
+							<button type="button" class="tabs-header__title _tab-active">Login</button>
+							<button type="button" class="tabs-header__title">Register</button>
+						</nav>
+						<div data-tabs-body class="tabs-header__content">
+							<div class="tabs-header__body tabs-header-login">
+								<h3 class="tabs-header-login__subtitle">Enter your username and password to login.</h3>
+								<form action="#" class="tabs-header__form">
+									<input type="email" placeholder="almamun_uxui@outlook.com" class="tabs-header-login__email">
+									<div class="tabs-header-login__password-body">
+										<input type="password" id="show1" class="tabs-header-login__password">
+										<button type="button" id="show" class="tabs-header-login__button-hide">
+										</button>
+									</div>
+									<div class="tabs-header-login__link-body">
+										<a href="#" class="tabs-header-login__link">Forgot Password?</a>
+									</div>
+									<button type="submit" class="tabs-header-login__button button">Login</button>
+								</form>
+								<div class="tabs-header-login__footer footer-tabs-header-login">
+									<h3 class="footer-tabs-header-login__title">Or register with</h3>
+									<a href="#" class="footer-tabs-header-login__button-google">Login with Google</a>
+									<a href="#" class="footer-tabs-header-login__button-facebook">Login with Facebook</a>
+								</div>
+							</div>
+							<div class="tabs-header__body tabs-header-register">
+								<h3 class="tabs-header-register__subtitle">Enter your username and password to login.</h3>
+								<form action="#" class="tabs-header__form">
+									<input type="text" placeholder="Username" class="tabs-header-register__email">
+									<input type="email" placeholder="Enter your email address" class="tabs-header-register__email">
+									<input type="password" placeholder="Password" class="tabs-header-register__password">
+									<input type="password" placeholder="Confirm Password" class="tabs-header-register__password-end">
+									<button type="submit" class="tabs-header-register__button button">Register</button>
+								</form>
+								<div class="tabs-header-register__footer footer-tabs-header-register">
+									<h3 class="footer-tabs-header-register__title">Or register with</h3>
+									<a href="#" class="footer-tabs-header-register__button-google">Login with Google</a>
+									<a href="#" class="footer-tabs-header-register__button-facebook">Login with Facebook</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230430191433"></script>
+</body>
+
+</html>
